@@ -49,7 +49,7 @@ const Login = () => {
             errorMessage={errors?.password?.message}
           />
           <Spacing />
-          <Button title="Entrar" />
+          <Button isDisabled={!isValid} title="Entrar" onClick={() => alert('Botão habilitado')}/>
         </Column>
       </LoginContainer>
     </Container>
